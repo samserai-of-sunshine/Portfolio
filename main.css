@@ -12,6 +12,16 @@ width: 800px;
 	margin: 0 auto;
 	
 }
+.header{
+  font-family: "Cherry Cream Soda", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.p{
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
 .left{
 	width: 380px;
 	height: 200px;
@@ -35,27 +45,28 @@ width: 800px;
 	visibility: hidden;
 	
 }
-.bottom{
+.entry1{
     width: 770px;
-    height: 380px;
+    height: 480px;
 	color:white;
     background-color: rgba(213,125,174,1.00);
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px;
     border: solid 3px rgba(240,185,204,1.00);
     clear: both;
 
 
 }
-.bottom img{
+.entry1 img{
 	max-width: 30%;
 	height: auto;
 	display: block;
 	margin: 10px;
-	float: left
+	float: left;
 	
 }
+
 footer{
 	background-color:rgba(0,163,112,1.00);
 	clear: both;
@@ -88,3 +99,62 @@ article.top {
     max-width: 100%;
     height: auto;
 }
+.entry1 a:link{
+	color:rgba(28,78,62,1.00);
+	font-size:1em;
+}
+.entry1 a:active{
+	color:rgba(255,12,147,1.00);
+	font-size:1em;
+}
+.entry1 a:hover{
+	color:rgba(79,104,0,1.00);
+	font-size:1.2em;
+}
+.entry1 a:visited{
+	color:rgba(172,24,106,1.00);
+	
+}
+.entry2 img{
+	max-width: 30%;
+	height: auto;
+	display: block;
+	margin: 10px;
+	float: left;
+}
+.entry2{
+    width: 770px;
+    height: 480px;
+	color:white;
+    background-color: rgba(213,125,174,1.00);
+    border-radius: 10px;
+    margin: 90px auto;
+    padding: 20px;
+    border: solid 3px rgba(240,185,204,1.00);
+    clear: both;
+}	
+.entry3 img{
+	max-width: 30%;
+	height: auto;
+	display: block;
+	margin: 10px;
+	float: left;
+}
+.entry3 img.marvelous{
+	  max-width: 60%;
+    height: auto;
+    margin: 10px auto;
+    float: right;
+}
+.entry3{
+    width: 770px;
+    height: 520px;
+	color:white;
+    background-color: rgba(213,125,174,1.00);
+    border-radius: 10px;
+    margin: 90px auto;
+    padding: 20px;
+    border: solid 3px rgba(240,185,204,1.00);
+    clear: both;
+}
+	
