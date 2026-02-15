@@ -3,9 +3,87 @@
 *{
 	box-sizing: border-box;
 }
-body{
-	background: url("Images/Background.png") no-repeat fixed center center;
-		background-size: cover;
+
+#header-wrapper {
+    position:sticky;
+    top: 0;
+    z-index: 1000;  
+}
+
+
+#header-wrapper {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;    
+}
+
+
+#logo-box {
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;          
+
+}
+
+
+#logo-box #logo {
+    height: 200px;       
+    width: auto;
+	max-height: 20vh;
+}
+
+
+#navbar {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;  
+	margin-top: -110px;
+}
+
+
+#navbar img {
+    display: block;
+    width: calc(100vw + 230px); 
+    height: auto;
+
+    transform: translateX(100%); 
+    animation: slideIn 3s forwards linear; 
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-230px); 
+    }
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.parallax {
+  position: absolute;  
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;         
+}
+
+.parallax img {
+  width: 100%;          
+  height: auto;       
+  display: block;
 }
 #container{
 width: 800px;
@@ -156,5 +234,40 @@ article.top {
     padding: 20px;
     border: solid 3px rgba(240,185,204,1.00);
     clear: both;
+}
+
+.Counting {
+  	width: 100%;
+ 	border-collapse: collapse;
+  	font-family: "Cherry Cream Soda", sans-serif, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: rgba(18,63,43,1.00)
+}
+.Counting th, td{
+	border: 2px solid rgba(18,63,43,1.00);
+	padding: 10px
+	
+}
+.Counting th{background:rgba(0,163,112,1.00);}
+.Language{background:rgba(0,202,97,0.47);}
+.Counting tr:hover {background:rgba(213,125,174,0.51);}
+
+.Numbered li{
+	font-family: "Cherry Cream Soda", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	background:rgba(213,125,174,1.00);
+	margin: 0;
+	padding: 10px 10px;
+	list-style: circle;
+	list-style-position: inside;
+	color:aliceblue
+}
+
+.NotNumbered ul{
+	font-family: "Cherry Cream Soda", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	background:rgba(0,202,97,1.00);
+	margin: 0;
+	padding: 10px 10px;
+	list-style: circle;
+	list-style-position: inside;
+	color:aliceblue
 }
 	

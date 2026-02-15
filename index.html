@@ -11,9 +11,26 @@
 
 </head>
 <body>
+	<div class="parallax">
+		<img src="Images/Background.png" alt="Sky">
+	</div>
+	
+	<div id="header wrapper">
+	
+		<div id="logo-box">
+        <img src="Images/Logo.png" alt="Sproutin Sunshine Logo" id="logo">
+    </div>
+	 
+	<nav id="navbar">
+		<img src="Images/NavBar.png" alt="Animated navigation bar that list Home Portfolio Blog About and Contact"/>
+		</nav>
+	 </div>
+	
 	<div id="container">
+		
 	<header><h1 class="header" style="font-size: 50px;">Creative Corner</h1></header>
-		<nav></nav>
+	
+		
 		<section>
 			<article class="top">
 			<img src="Images/LittleMe.png" alt="small girl carrying wacom pen" title="this is me"> 
@@ -45,10 +62,75 @@
 			<img src="Images/SamandSamOutfit.jpeg" alt="Picture of Puppeteer, Sam, and puppet Sam">
 			<img src="Images/MarvelousDemo.gif" alt="Marvelous Marilyn Monroe Example" class="marvelous">
 			</article>
+			
+			
+			<table class="Counting">
+			<tr><th>Language</th>
+				<th>One</th>
+				<th>Two</th>
+				<th>Three</th>
+				</tr>
+			<tr><td class="Language"><b>Numeric</b></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				</tr>
+			<tr><td class="Language"><b>Spanish</b></td>
+				<td>uno</td>
+				<td>dos</td>
+				<td>tres</td>
+				</tr>	
+			<tr><td class="Language"><b>Mandarin</b></td>
+				<td>yī</td>
+				<td>èr</td>
+				<td>sān</td>
+				</tr>
+			<tr><td class="Language"><b>Turkish</b></td>
+				<td>bir</td>
+				<td>iki</td>
+				<td>üç</td>
+				</tr>
+			</table>
+			
+			
+			
+			<ol class="Numbered">
+				<li>One</li>
+				<li>Two</li>
+				<li>Three</li>
+			</ol>
+			
+			<ol class="NotNumbered">
+				<ul>Three &#128151</ul>
+				<ul>One &#127752</ul>
+				<ul>Two &#127804</ul>
+			</ol>
+		
+			<iframe src="https://samserai-of-sunshine.github.io/1316_Project1/"
+  				width="100%" 
+  				height="800" 
+ 				scrolling="yes">
+			</iframe>
+		
 		
 		
 		</section>
 		<footer><em>Copyright</em> Samserai Lopez 2026</footer>
 	</div>
+
+<script>
+window.addEventListener("scroll", function(){
+  const scrollY = window.pageYOffset;
+  const parallax = document.querySelector(".parallax img");
+
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+ 
+  const imgHeight = parallax.offsetHeight - window.innerHeight;
+
+  const move = (scrollY / docHeight) * imgHeight;
+
+  parallax.style.transform = "translateY(" + move + "px)";
+});
+</script>
 </body>
 </html>
